@@ -1,5 +1,44 @@
-*{
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*regole generali header*/
+header {
+    background-color: orangered;
+    width: auto;
+    height: 80px;
+
+    /* flex */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* stile degli elementi della nav */
+
+a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.profile i{
+    color: white;
+    padding: 5px;
 }
