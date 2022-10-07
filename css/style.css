@@ -53,61 +53,94 @@ a {
 
 /* main */
 
-
-.row {
-    width: 80%;
+.container-card{
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 50px;
+
     /* flex */
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
 
 }
 
-.col {
-    width: 500px;
-    height: 600px;
-    position: relative;
-    display: inline-block;
-    margin-left: 20px;
+
+
+.card{
+    
+    width: calc(100%/3);
     cursor: pointer;
+    padding: 10px;
+    position:relative;
+    margin: 30px 0;
+
 
 }
 
-.col img {
-    width: 90%;
-    height: 90%;
-    top: 0;
-    left: 0;
+/* immagini */
+.card-img{
+    display: relative;
+}
+.card img{
+    width: 100%;
     box-shadow: inset;
     box-shadow: 0px -10px 30px #ccc;
+    top: 0;
+    left: 0;
+    
 }
 
-.front{    
-    position: inherit;
-}
+.back-img{
 
-.back {
     display: none;
-    position: absolute;
-    z-index: 99;
-}
-.nome{
-    font-size: 20px;
-    font-weight: 900;
-}
-.prezzo{
-    color: red;
-    font-weight: bolder;
+    
 }
 
-
-
-.col:hover .back{
+.card-img:hover .main-img {
+    display: none;
+}
+.card-img:hover .back-img {
     display: inline;
 }
 
+/*favorites*/
+
+.favorites{
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right:10px;
+    font-size: 38px;
+    padding: 15px;
+    color: black;
+}
+.favorites:hover {
+    color:red;
+}
+
+.badges{
+    position: absolute;
+    left: 10px;
+    bottom: 60px;
+}
+.label{
+    padding: 5px;
+    color: white;
+}
+
+.sconto{
+    background-color: red;
+}
+.tipo{
+    background-color: green;
+}
+
+
+
+/*text*/
+
+.card-text{
+    position: absolute;
+}
 
 
 /* footer */
